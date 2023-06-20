@@ -7,10 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
     //Speed (How fast the player will navigate on our game)
     public float moveSpeed;
+
     //RigidBody (Handles Physics, Makes our Player Moves) 
     public Rigidbody2D rigidBody;
+
     //Dictates where the player is moving
     private Vector2 movementInput;
+
     //Access our Animator to play animations
     public Animator anim;
 
@@ -25,37 +28,33 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.UpArrow)))
         {
+            anim.enabled = true;
             anim.SetTrigger("Backward");
         }
-        if (Input.GetKeyUp(KeyCode.W))
+
+        if (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow)))
         {
-            anim.SetTrigger("Back Idle");
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
+            anim.enabled = true;
             anim.SetTrigger("Forward");
         }
-        if (Input.GetKeyUp(KeyCode.S))
+
+        if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow)))
         {
-            anim.SetTrigger("Front Idle");
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
+            anim.enabled = true;
             anim.SetTrigger("Left");
         }
-        if (Input.GetKeyUp(KeyCode.A))
+
+        if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow)))
         {
-            anim.SetTrigger("Left Idle");
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
+            anim.enabled = true;
             anim.SetTrigger("Right");
         }
-        if (Input.GetKeyUp(KeyCode.D))
+
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
         {
-            anim.SetTrigger("Right Idle");
+            anim.enabled = false;
         }
     }
     private void FixedUpdate() //Fixed Update for Physics Calculations
