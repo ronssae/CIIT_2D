@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     //Access our Animator to play animations
     public Animator anim;
 
+    //Counts coins collected
+    public int coinsCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,34 +31,38 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.UpArrow)))
-        {
-            anim.enabled = true;
-            anim.SetTrigger("Backward");
-        }
+        //if (Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.UpArrow)))
+        //{
+        //    anim.enabled = true;
+        //    anim.SetTrigger("Backward");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow)))
-        {
-            anim.enabled = true;
-            anim.SetTrigger("Forward");
-        }
+        //if (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow)))
+        //{
+        //    anim.enabled = true;
+        //    anim.SetTrigger("Forward");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow)))
-        {
-            anim.enabled = true;
-            anim.SetTrigger("Left");
-        }
+        //if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow)))
+        //{
+        //    anim.enabled = true;
+        //    anim.SetTrigger("Left");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow)))
-        {
-            anim.enabled = true;
-            anim.SetTrigger("Right");
-        }
+        //if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow)))
+        //{
+        //    anim.enabled = true;
+        //    anim.SetTrigger("Right");
+        //}
 
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            anim.enabled = false;
-        }
+        //if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        //{
+        //    anim.enabled = false;
+        //}
+
+        anim.SetFloat("Horizontal", movementInput.x);
+        anim.SetFloat("Vertical", movementInput.y);
+        anim.SetFloat("Speed", movementInput.sqrMagnitude);
     }
     private void FixedUpdate() //Fixed Update for Physics Calculations
     {
@@ -69,4 +76,12 @@ public class PlayerMovement : MonoBehaviour
         movementInput = inputValue.Get<Vector2>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coins"))
+        {
+            Destroy(collision.gameObject);
+            coinsCount++;
+        }
+    }
 }

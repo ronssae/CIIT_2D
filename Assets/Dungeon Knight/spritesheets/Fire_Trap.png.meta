@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: db6fe56efc8c80248abfd33367f2de11
+guid: b2de77fc7fa7e704d8f3c93cb6a4e801
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,265 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CoinAniamtion_0
+      name: Fire_Trap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 989
-        width: 230
-        height: 327
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1f104288b53a49468758008463d848e
-      internalID: 491725355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_1
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 990
-        width: 224
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6bf700503d4c4f49aba5df5243e022d
-      internalID: -343803431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_2
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 990
-        width: 214
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b61e3fc2de30f2c48afe523e9212ff82
-      internalID: -1995082205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_3
-      rect:
-        serializedVersion: 2
-        x: 701
-        y: 989
-        width: 208
-        height: 327
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a53375c8c3231b445a80eaacccde0f0a
-      internalID: 270626459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_4
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 662
-        width: 205
-        height: 324
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 338ff0a923b79b24498126e87d89ffd7
-      internalID: -384725978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_5
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 660
-        width: 186
-        height: 327
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4824747f6fcda384db52c16c88f2b824
-      internalID: -1584082765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_6
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 660
-        width: 168
-        height: 327
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2b3a945c5298d947acaeff3e0e274da
-      internalID: 350017091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_7
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 662
-        width: 159
-        height: 324
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a483f52e31d5c8e44b759d6ded2af46f
-      internalID: 1772289227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_8
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 333
-        width: 149
-        height: 323
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f841848501ef148ab322d18975a464
-      internalID: -1407776390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_9
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 334
-        width: 159
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ee70cec612afb040b1780a96fee20a3
-      internalID: 852605440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_10
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 330
-        width: 168
-        height: 328
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 177840d26165e9a41bf63d8572c202f4
-      internalID: -621209695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_11
-      rect:
-        serializedVersion: 2
-        x: 713
-        y: 333
-        width: 184
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 624395f5ab240f043813e4ea6e936b42
-      internalID: 2075901565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CoinAniamtion_12
-      rect:
-        serializedVersion: 2
-        x: 16
         y: 0
-        width: 199
-        height: 329
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2e8463e43ef9f46ac27a28fc0fc6b1
-      internalID: 501780102
+      spriteID: d50779683c9bb1c4f997266575cb9834
+      internalID: 360636062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoinAniamtion_13
+      name: Fire_Trap_3
       rect:
         serializedVersion: 2
-        x: 242
-        y: 3
-        width: 206
-        height: 324
+        x: 96
+        y: 0
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e78b641451b8b6446932c7b478ad3863
-      internalID: -1383300406
+      spriteID: 857a2506512d22f4b842068cb5aa7dd6
+      internalID: -376280639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoinAniamtion_14
+      name: Fire_Trap_5
       rect:
         serializedVersion: 2
-        x: 469
-        y: 3
-        width: 213
-        height: 324
+        x: 160
+        y: 0
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cf55e31741c5054695fa829b7dbe978
-      internalID: -1217539753
+      spriteID: c8258d0797db2f94e9a11bd2ed58d783
+      internalID: -63087507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoinAniamtion_15
+      name: Fire_Trap_6
       rect:
         serializedVersion: 2
-        x: 696
-        y: 3
-        width: 218
-        height: 324
+        x: 192
+        y: 0
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,8 +208,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2865fc2e360e3f41b646312891a567c
-      internalID: -1676837087
+      spriteID: 169c7a41b0ff7da49b0592254a4e57f4
+      internalID: -1358385009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35878a2fbebfa2a438e9abdfbfced7af
+      internalID: -432915688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc40c6e177b5a6b43b7b6a29d1359653
+      internalID: 939584113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb446b830de0c0449a6679e013e063f0
+      internalID: 1845080282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb1989b823513c4bb205b89984750ab
+      internalID: 1825838661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f4ccc1912ea2d49bb3e61be2eec9ea
+      internalID: -1233038073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd1143e09d9e644cb1e2163675b0a14
+      internalID: 961304232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc17da9a3295a1408d1812ef9b6dee5
+      internalID: 1962449702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d38ec976300b7a449017a031bf603b8
+      internalID: 577925608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae1d455759d6d846982caf632eddc7c
+      internalID: 2120291876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_Trap_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a878d6dfc4f864f93fdd539e730008
+      internalID: -420501913
       vertices: []
       indices: 
       edges: []
@@ -477,22 +435,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CoinAniamtion_4: -384725978
-      CoinAniamtion_14: -1217539753
-      CoinAniamtion_15: -1676837087
-      CoinAniamtion_6: 350017091
-      CoinAniamtion_3: 270626459
-      CoinAniamtion_7: 1772289227
-      CoinAniamtion_9: 852605440
-      CoinAniamtion_8: -1407776390
-      CoinAniamtion_12: 501780102
-      CoinAniamtion_0: 491725355
-      CoinAniamtion_11: 2075901565
-      CoinAniamtion_13: -1383300406
-      CoinAniamtion_1: -343803431
-      CoinAniamtion_2: -1995082205
-      CoinAniamtion_5: -1584082765
-      CoinAniamtion_10: -621209695
+      Fire_Trap_13: -420501913
+      Fire_Trap_6: -1358385009
+      Fire_Trap_11: 577925608
+      Fire_Trap_4: -1233038073
+      Fire_Trap_8: 939584113
+      Fire_Trap_3: -376280639
+      Fire_Trap_0: 360636062
+      Fire_Trap_9: 961304232
+      Fire_Trap_10: 1962449702
+      Fire_Trap_12: 2120291876
+      Fire_Trap_2: 1825838661
+      Fire_Trap_7: -432915688
+      Fire_Trap_5: -63087507
+      Fire_Trap_1: 1845080282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
