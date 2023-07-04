@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     //Speed (How fast the player will navigate on our game)
-    public float moveSpeed;
+    public int moveSpeed;
 
     //RigidBody (Handles Physics, Makes our Player Moves) 
     public Rigidbody2D rigidBody;
@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     //Counts coins collected
     public int coinsCount;
+
+    //Player's Health Points
+    public int healthPoints;
 
     // Start is called before the first frame update
     void Start()
@@ -78,10 +81,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Coins"))
+        if (collision.CompareTag("Coins"))
+        {
+            coinsCount++;
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("Speed"))
+        {
+            Transform col = collision.transform;
+            col.transform.position = new Vector2(999, 999);
+        }
+        if (collision.CompareTag("Health"))
         {
             Destroy(collision.gameObject);
-            coinsCount++;
         }
     }
 }

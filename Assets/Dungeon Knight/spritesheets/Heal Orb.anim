@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bear Trap
+  m_Name: Heal Orb
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,17 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -200562320, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - time: 0.3
-      value: {fileID: 1611186, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - time: 0.65
-      value: {fileID: 1800319852, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - time: 0.93333334
-      value: {fileID: 1708679563, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - time: 1.25
-      value: {fileID: 1708679563, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
+      value: {fileID: 21300000, guid: ca4cc64db7833c74d8c15c6b28c8c915, type: 3}
+    - time: 0.2
+      value: {fileID: 21300000, guid: 6aa84cd605dde8d48a540dcacb1be13f, type: 3}
+    - time: 0.4
+      value: {fileID: 21300000, guid: 810e8efc7a5558c44a92fe9d520f35fb, type: 3}
+    - time: 0.6
+      value: {fileID: 21300000, guid: 4fb9790e4e680354bb7dac6da3abc34b, type: 3}
+    - time: 0.8
+      value: {fileID: 21300000, guid: 89174dd3617f0f742a6d480ecaab291f, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: 9044ee512feda09449d75e8cd431d563, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -52,17 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -200562320, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - {fileID: 1611186, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - {fileID: 1800319852, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - {fileID: 1708679563, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
-    - {fileID: 1708679563, guid: 5c95a2e220346c8439578f4e5fbd9f1d, type: 3}
+    - {fileID: 21300000, guid: ca4cc64db7833c74d8c15c6b28c8c915, type: 3}
+    - {fileID: 21300000, guid: 6aa84cd605dde8d48a540dcacb1be13f, type: 3}
+    - {fileID: 21300000, guid: 810e8efc7a5558c44a92fe9d520f35fb, type: 3}
+    - {fileID: 21300000, guid: 4fb9790e4e680354bb7dac6da3abc34b, type: 3}
+    - {fileID: 21300000, guid: 89174dd3617f0f742a6d480ecaab291f, type: 3}
+    - {fileID: 21300000, guid: 9044ee512feda09449d75e8cd431d563, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.2666667
+    m_StopTime: 1.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -81,11 +84,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.3
-    functionName: PlayerDamage
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
