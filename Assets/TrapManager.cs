@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TrapManager : MonoBehaviour
 {
     public Animator anim;
     public PlayerMovement player;
+    public TMP_Text HealthText;
 
     // Damage Trap Indicator
     public int trapDamage;
+    public int LavaDamage;
 
     public bool isPlayerOnTop;
 
@@ -22,6 +25,7 @@ public class TrapManager : MonoBehaviour
         isPlayerOnTop = true;
         if (collision.gameObject.CompareTag("Player"))
         {
+            LavaDamage -= player.healthPoints;
             anim.SetBool("isActive", true);
         }
     }
@@ -40,5 +44,7 @@ public class TrapManager : MonoBehaviour
         {
             player.healthPoints -= trapDamage;
         }
+
+        HealthText.text = "HP:" + player.healthPoints;
     }
 }

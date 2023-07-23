@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Collectibles : MonoBehaviour
@@ -9,6 +10,7 @@ public class Collectibles : MonoBehaviour
     public int speedBoost, healthBoost, duration;
     public int baseMovespeed;
     public PlayerMovement player;
+    public TMP_Text HealthText;
     private void Start()
     {
         baseMovespeed = player.moveSpeed;
@@ -23,6 +25,8 @@ public class Collectibles : MonoBehaviour
         if (health)
         {
             player.healthPoints += healthBoost;
+
+            HealthText.text = "HP:" + player.healthPoints;
         }
     }
     IEnumerator BackToBaseSpeed()

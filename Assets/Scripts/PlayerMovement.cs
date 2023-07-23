@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     //Speed (How fast the player will navigate on our game)
     public int moveSpeed;
 
@@ -22,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
     //Player's Health Points
     public int healthPoints;
+
+    public TMP_Text coinText;
 
     // Start is called before the first frame update
     void Start()
@@ -85,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
         {
             coinsCount++;
             Destroy(collision.gameObject);
+            coinText.text = "COINS:" + coinsCount.ToString();
         }
         if (collision.CompareTag("Speed"))
         {
